@@ -1,0 +1,40 @@
+body {
+    background-color: #e2935e;
+}
+
+h6 {
+    font-size: 30px;
+}
+
+li {
+    font-size: 20px;
+}
+
+ul li {
+    color: aquamarine;
+}
+
+ol li {
+    color: red;
+}
+
+#important-text {
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.blue {
+    color: blue;
+}
+
+section {
+    background-image: url("../images/sunset.jpeg");
+    height: 800px;
+    width: 1000px;
+    background-position: center center;
+}
