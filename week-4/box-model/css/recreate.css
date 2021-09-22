@@ -10,21 +10,3 @@ nav {
     display: inline-block;
     margin: 10px;
 }
-
-.inline {
-    background: mediumspringgreen;
-    padding: 10px;
-    display: inline;
-    margin: 20px;
-}
-
-.inline-block {
-    background: pink;
-    padding: 10px;
-    display: inline-block
-}
-
-.block {
-    background: orange;
-    padding: 10px;
-}
