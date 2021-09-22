@@ -1,0 +1,16 @@
+.block {
+    background-color: pink;
+    border: 1px solid mediumturquoise; 
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.inline {
+    background-color: orchid;
+    border: 3px solid gray;
+    padding: 30px;
+    margin-bottom: 50px;
+    display: inline-block;
+    opacity: 0;
+}
