@@ -1,0 +1,40 @@
+div {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background: rgb(123, 228, 197);
+    display: inline-block;
+}
+
+.relative {
+    background: mediumpurple;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.absolute {
+    background: coral;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nested-absolute {
+    background: coral;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+section {
+    width: 50vw;
+    height: 50vw;
+    background: blueviolet;
+}
+
+section div {
+    background: pink;
+    width: 50%;
+    height: 50%;
+}
