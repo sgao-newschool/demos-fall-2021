@@ -4,37 +4,60 @@ div {
     margin: 30px;
     background: rgb(123, 228, 197);
     display: inline-block;
+    font-size: 50px;
+    text-align: center;
 }
 
-.relative {
-    background: mediumpurple;
+#my-box {
+    background-color: mediumpurple;
     position: relative;
-    left: 10px;
-    top: 20px;
-}
-
-.absolute {
-    background: coral;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.nested-absolute {
-    background: coral;
-    position: absolute;
-    left: 10px;
     top: 10px;
+    left: 30px;
+}
+
+.absolute-box {
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+#my-fixed-box {
+    background-color:thistle;
+    position: fixed;
+}
+
+.my-other-box {
+    background-color:violet;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    font-size: 14px;
+    left: 0px;
+    top: 0px;
+}
+
+.parent {
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
 
 section {
-    width: 50vw;
-    height: 50vw;
-    background: blueviolet;
+    width: 75vw;
+    height: 50vh;
+    background-color: tomato;
 }
 
-section div {
-    background: pink;
-    width: 50%;
-    height: 50%;
+#section-parent {
+    background-color:rgb(123, 228, 197);
+    position: relative;
+    width: 800px;
+    height: 1000px;
 }
+
+h1 {
+    font-size: 40vw;
+}
+

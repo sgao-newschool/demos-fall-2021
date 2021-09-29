@@ -1,0 +1,66 @@
+body {
+    border: 30px solid #4BA3F3;
+    margin: 0;
+    background-color: black;
+
+  
+    background: linear-gradient(to bottom,  rgba(254,201,255,1) 0%,rgba(255,143,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+}
+
+h2,
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#image-container {
+    width: 224px;
+    overflow: hidden;
+    height: 224px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    border: 8px solid #4BA3F3;
+}
+
+img {
+    position: relative;
+    left: -74px;
+    top: -14px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 70px;
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+.white-text {
+    color: white;
+    background-image: url(../images/blue-button.png);
+    width: 221px;
+    height: 158px;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
