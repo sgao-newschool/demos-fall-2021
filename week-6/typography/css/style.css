@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Clearface Regular';
+    src: url('../fonts/clearface-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Clearface Bold';
+    src: url('../fonts/clearface-bold-webfont.woff') format('woff');
+}
+
+:root {
+    font-size: 60px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Birthstone', cursive;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section {
+    font-size: 100px;
+}
+
+span {
+    font-size: .5em;
+}
+
