@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS selector demo</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- CSS specificity: ids, classes and tag names -->        
+        <section id="my-green-box">I'm a section with an ID</section>
+        <section class="my-pink-box">I'm a section with a class</section>
+        <section>I don't have any ids or classes</section>
+
+        <!-- Descendent selectors -->        
+        <article id="descendent-container">
+            <ul>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+
+            <ol>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ol>
+        </article>
+        
+        <!-- Combinator selectors: siblings -->       
+        <div>Hi I'm a div</div>
+        <p>I'm a paragraph that's the sibling of a div</p>
+      
+
+    </body>
+</html>

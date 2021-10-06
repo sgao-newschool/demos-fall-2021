@@ -1,0 +1,102 @@
+li {
+    list-style:none;
+}
+section {
+    padding: 10px;
+    height: 100px;
+}
+
+/* CSS specificity: ids, classes and tag names */
+#my-green-box {
+    background: #bbf1c7;
+}
+
+.my-pink-box {
+    background: #ecccdc;
+}
+
+section {
+    background: #f1e8bb;
+}
+
+/* Apply styles to multiple elements by separating them with a comma */
+#descendent-container ol,
+#descendent-container ul {
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+/* Descendant selectors */
+ol li {
+    background: #d0ccec;
+    margin: 10px;
+}
+
+/* Sibling selectors */
+div ~ p {
+    color: pink;
+}
+
+/* Psuedo selectors */
+button {
+    padding: 20px;
+    border: 0px;
+    background: lavender;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25);
+    outline: none;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+    
+button:hover {
+    background: #e6fae7;  
+    opacity: .5;
+    padding: 40px;
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25);
+}
+
+.todo-list {
+    background:#f5dde1;
+    padding: 10px;
+}
+.todo-list li {
+    padding: 20px;
+    margin: 5px;
+    background: white;
+}
+
+.todo-list li:first-child {
+    color: goldenrod;
+}
+
+.todo-list li:nth-child(3) {
+    color: #74a974;
+}
+
+.todo-list li:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+.transition-element {
+    width: 200px;
+    height: 200px;
+    background: goldenrod;
+    margin: 50px;  
+    transition: all .5s ease-in;
+    
+}
+
+.transition-element:hover {
+    transform: translateX(20px) rotate(20deg) skew(30deg);
+}
+
+
