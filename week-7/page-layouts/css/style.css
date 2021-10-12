@@ -1,0 +1,29 @@
+body {
+    font-family: Helvetica, arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 40px 0;
+}
+
+div {
+    background: lightseagreen;
+    padding: 10px;
+    color: white;
+    font-size: 1.5vw;
+}
+
+div:nth-child(odd) {
+    background: rgb(205, 136, 111);
+}
+
+.flex-container {
+ 
+}
+
+
+.grid-container {
+    
+}
