@@ -20,10 +20,23 @@ div:nth-child(odd) {
 }
 
 .flex-container {
- 
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex-basis: 20%;
 }
 
 
 .grid-container {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
