@@ -1,0 +1,50 @@
+body {
+    font-family: Helvetica, arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 40px 0;
+}
+
+div {
+    background: lightseagreen;
+    color: white;
+    font-size: 1.5vw;
+
+    padding: 10px;
+    border: 1px solid black;
+    /* --- new property --- */
+    /* https://www.w3schools.com/css/css3_box-sizing.asp */
+    /* ensures that padding and borders are included in the element's width & height (instead of adding to the element's width & height) */
+    box-sizing: border-box; 
+}
+
+div:nth-child(odd) {
+    background: rgb(205, 136, 111);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+    /* Add wrapping to your flexbox elements in conjunction with the flex-basis property */
+    flex-wrap: wrap; 
+} 
+
+.flex-item {
+    flex-basis: 25%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+/* Media queries are conditions that we want add styles to. We only need to override the style properties we would like to change at that condition */
+

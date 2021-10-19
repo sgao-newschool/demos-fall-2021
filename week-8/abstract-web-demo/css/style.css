@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background: #ECECEC;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}   
+
+#logo {
+    height: 100%;
+    width: 140px;
+    background: pink;
+    margin: 0;
+}
+
+#search-bar {
+    width: 40%;
+    height: 100%;
+    background: pink;
+}
+
+#sign-in {
+    width: 140px;
+    height: 100%;
+    background: pink;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    flex-basis: 25%;
+    background: #D3FBF6;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    list-style: none;
+    padding: 33px;
+    border-bottom: 1px solid black;
+}
+
+aside li div {
+    background: pink;
+    height: 212px;
+    width: 100%;
+}
+
+#video-grid {
+    flex-basis: 75%;
+    padding: 33px;
+}
+
+#ad {
+    background: #ECECEC;
+    width: 100%;
+    height: 286px;
+}
+
+.video-category {
+    margin-top: 46px;
+    background: #ECECEC;
+    padding: 30px;
+}
+
+.video-category ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.video-category header {
+    width: 100%;
+    height: 70px;
+    background: pink;
+    margin-bottom: 35px;
+}
+
+.video-category ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.video-category li {
+    height: 136px;
+    background: pink;
+}
+
+@media (max-width: 768px) {
+    #search-bar {
+        display: none;
+    }
+
+    aside {
+        flex-basis: 10%;
+    }
+
+    aside li {
+        padding: 10px;
+    }
+
+    aside li div {
+        height: 40px;
+    }
+
+    #video-grid {
+        flex-basis: 90%;
+        padding: 10px;
+    }
+
+    .video-category {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .video-category ul {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    aside {
+        display: none;
+    }
+
+    #video-grid {
+        flex-basis: 100%;
+    }
+
+    .video-category ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
