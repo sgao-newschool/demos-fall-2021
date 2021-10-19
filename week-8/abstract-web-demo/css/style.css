@@ -57,44 +57,44 @@ aside li div {
     width: 100%;
 }
 
-#video-grid {
+#grid {
     flex-basis: 75%;
     padding: 33px;
 }
 
-#ad {
+#banner {
     background: #ECECEC;
     width: 100%;
     height: 286px;
 }
 
-.video-category {
+.category {
     margin-top: 46px;
     background: #ECECEC;
     padding: 30px;
 }
 
-.video-category ul {
+.category ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.video-category header {
+.category header {
     width: 100%;
     height: 70px;
     background: pink;
     margin-bottom: 35px;
 }
 
-.video-category ul {
+.category ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 15px;
     row-gap: 15px;
 }
 
-.video-category li {
+.category .item {
     height: 136px;
     background: pink;
 }
@@ -116,17 +116,17 @@ aside li div {
         height: 40px;
     }
 
-    #video-grid {
+    #grid {
         flex-basis: 90%;
         padding: 10px;
     }
 
-    .video-category {
+    .category {
         margin-top: 20px;
         padding: 10px;
     }
 
-    .video-category ul {
+    .category ul {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 10px;
@@ -138,11 +138,11 @@ aside li div {
         display: none;
     }
 
-    #video-grid {
+    #grid {
         flex-basis: 100%;
     }
 
-    .video-category ul {
+    .category ul {
         grid-template-columns: repeat(1, 1fr);
     }
 }
