@@ -37,6 +37,10 @@ div:nth-child(odd) {
     flex-basis: 25%;
 }
 
+.flex-item:first-child {
+    flex-basis: 50%;
+}
+
 
 .grid-container {
     display: grid;
@@ -47,4 +51,38 @@ div:nth-child(odd) {
 
 
 /* Media queries are conditions that we want add styles to. We only need to override the style properties we would like to change at that condition */
+@media (max-width: 850px) {
+    .flex-item {
+        flex-basis: 50%;
+        font-size: 2.5vw;
+    }
 
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #first-grid-item {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-item {
+        flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
+
+    .grid-container {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) and (max-height: 900px) {
+    #first-grid-item {
+        background-color: blueviolet;
+    }
+}
