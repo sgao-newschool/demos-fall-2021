@@ -1,0 +1,40 @@
+section {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+    background-color: rgb(228, 185, 124);
+    color: white;
+
+   
+    -webkit-appearance: none; /* this property removes the browser's default "button" appearnce so youy can style it however you want */
+
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 0px;
+
+    /* cursor: pointer; this property adds the pointer cursor when you hover over a button */
+
+    /* center the button */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    background: lavender;
+    transition: background 1s ease-out;
+}
