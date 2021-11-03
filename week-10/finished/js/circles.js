@@ -1,14 +1,16 @@
 window.addEventListener("load", function() {
-   colorCircles()
+   var circles = document.getElementsByClassName('circle');
 
-   function colorCircles() {
-      var circles = document.getElementsByClassName('circle');
 
-      for (let i = 0; i < circles.length; i++) {
-         if(i % 2 === 0) {
-            circles[i].style.backgroundColor = 'blue'
-         }
-      }
+   for(var index = 0; index < circles.length; index++) {
+        var circleItem = circles[index];
+
+        if(index % 2 === 0) {
+            circleItem.style.backgroundColor = 'blue';
+        }
+
+        console.log(index % 2) //the remainder of index / 2
+        
    }
 
 });

@@ -1,10 +1,10 @@
 window.addEventListener("load", function() {
-   var cursorPositionElement = document.getElementById("cursor-position");
-   document.addEventListener('mousemove', trackCursor);
+    var paragraph = document.getElementById('cursor-position');
 
-   function trackCursor(e) {
-      cursorPositionElement.innerHTML = 'x: ' + e.clientX + ' ' + 'y: ' + e.clientY;
-   }
+    document.addEventListener('mousemove', writeText)
 
+    function writeText(evt) {
+        paragraph.innerHTML = 'x: ' + evt.pageX + ' ' + 'y: ' + evt.pageY
+    }
 });
 

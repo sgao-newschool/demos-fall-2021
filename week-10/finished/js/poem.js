@@ -1,5 +1,16 @@
 window.addEventListener("load", function() {
+   //event
+   //--- "keydown" event
 
+   //function
+   //--- type one word of our poem each time a key is pressed
+      //---separate our poem into each individual word
+
+      //figure out the current (or starting) word's index
+      //write the current word 
+
+      //figure out the next word's index by adding 1 to our current word's index
+      //then write that word
    var poemArray = [
       "on", 
       "the", 
@@ -32,23 +43,27 @@ window.addEventListener("load", function() {
       "night"
    ] 
 
-   var poemContainer = document.getElementById('poem');
-   var currentWordIndex = 0;
-   
-   document.body.addEventListener('keydown', typePoem);
+   var currentIndex = 0;
+   var currentWord = poemArray[currentIndex];
 
-   function typePoem() {
-      if(currentWordIndex === poemArray.length - 1) return;
-      
-      var nextWord = poemArray[Math.floor(Math.random() * (poemArray.length - 1))];
-     
-      currentWordIndex++;
+   document.addEventListener('keydown', writeWord)
 
-      typeWord(nextWord)
+   function writeWord(event) {
+
+      document.getElementById("poem").innerHTML = currentWord;
+
+      findNextWord();
    }
 
-   function typeWord(word) {
-      poemContainer.innerHTML = word;
-   }
+   function findNextWord() {
+      if(currentIndex === poemArray.length - 1) {
+         currentIndex = 0;
+         currentWord = poemArray[currentIndex];
+      } else {
+         var nextIndex = currentIndex + 1;
+         currentWord = poemArray[nextIndex];
+         currentIndex = nextIndex;
+      }
+   }  
 });
 
