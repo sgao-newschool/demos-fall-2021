@@ -16,14 +16,14 @@ button {
     color: white;
 
    
-    -webkit-appearance: none; /* this property removes the browser's default "button" appearnce so youy can style it however you want */
+    appearance: none; /* this property removes the browser's default "button" appearnce so youy can style it however you want */
 
     width: 80px;
     height: 80px;
     border-radius: 100%;
     border: 0px;
 
-    /* cursor: pointer; this property adds the pointer cursor when you hover over a button */
+    cursor: pointer; /*this property adds the pointer cursor when you hover over a button*/
 
     /* center the button */
     position: absolute;
@@ -36,5 +36,5 @@ div {
     width: 100%;
     height: 100%;
     background: lavender;
-    transition: background 1s ease-out;
+    transition: all 1s ease-out;
 }

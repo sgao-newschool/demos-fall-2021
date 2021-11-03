@@ -1,0 +1,52 @@
+body {
+    background: black;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+#circles {
+    padding: 25px;
+}
+
+#poem {
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#circles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 100%;
+    padding-bottom: 100%;
+    background: white;
+    border-radius: 100%;
+}
+
+#cursor-position-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#cursor-position {
+    color: white;
+    font-size: 7vw;
+}
